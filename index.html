@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conservatory Digital Notice Board</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="board">
+      <header class="hero">
+        <div class="hero-content">
+          <div class="hero-visual">
+            <img
+              src="lorenzo-spoleti-MlhJNEUQpBs-unsplash.jpg"
+              alt="Piano illustration"
+            />
+          </div>
+          <p class="label">Gr8keys Conservatory Notice Board</p>
+          <h1>Today's Performances & Rehearsals</h1>
+          <p class="hero-copy">
+            A refined display for ensemble schedules, audition updates, and
+            campus announcements — built for musicians, by music lovers.
+          </p>
+        </div>
+        <div class="hero-meta">
+          <div class="clock" id="currentTime">Time 7:45 PM</div>
+          <div class="stage">Main Foyer Gallery</div>
+        </div>
+      </header>
+
+      <section class="grid">
+        <article class="card highlight">
+          <div class="highlight-detail">
+            <div class="card-header">
+              <span>Featured Concert</span>
+              <h2>Chamber Strings & Wind Octet</h2>
+            </div>
+            <p>
+              Join the conservatory ensemble for an evening of Beethoven,
+              Dvořák, and Ravel in the Concert Hall.
+            </p>
+            <ul>
+              <li><strong>When:</strong> Friday, 7:30 PM</li>
+              <li><strong>Where:</strong> Grand Concert Hall</li>
+              <li><strong>Soloist:</strong> Maya Chen, Violin</li>
+            </ul>
+          </div>
+          <div class="highlight-graphic">
+            <img src="assets/concert.svg" alt="Concert illustration" />
+          </div>
+        </article>
+
+        <article class="card gallery-card">
+          <div class="card-header">
+            <span>Gallery</span>
+            <h2>Life at Gr8keys Conservatory</h2>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="assets/gallery-1.svg"
+                alt="Students performing on stage"
+              />
+              <p>Stage performances</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/gallery-2.svg" alt="Practice room sessions" />
+              <p>Practice & rehearsal</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/gallery-3.svg" alt="Masterclass presentation" />
+              <p>Masterclasses</p>
+            </div>
+            <div class="gallery-item">
+              <img src="assets/gallery-4.svg" alt="Student spotlight session" />
+              <p>Student spotlight</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card schedule-card">
+          <div class="card-header">
+            <span>Performance Schedule</span>
+            <h2>Weekly Recital Roundup</h2>
+          </div>
+          <div class="schedule-list" id="performanceSchedule"></div>
+        </article>
+
+        <article class="card rehearsal-card">
+          <div class="card-header">
+            <span>Ensemble Rehearsals</span>
+            <h2>Today's Room Assignments</h2>
+          </div>
+          <div class="schedule-list" id="rehearsalSchedule"></div>
+        </article>
+
+        <article class="card ensemble-tracker-card">
+          <div class="card-header">
+            <span>Ensemble Tracker</span>
+            <h2>String & Choral Rehearsal Flow</h2>
+          </div>
+          <div class="schedule-list" id="ensembleTracker"></div>
+        </article>
+
+        <article class="card recital-card">
+          <div class="card-header">
+            <span>Upcoming Recitals</span>
+            <h2>Concerts & Program Highlights</h2>
+          </div>
+          <div class="schedule-list" id="recitalSchedule"></div>
+        </article>
+
+        <article class="card masterclass-card">
+          <div class="card-header">
+            <span>Masterclasses</span>
+            <h2>Faculty-Led Sessions</h2>
+          </div>
+          <div class="schedule-list" id="masterclassDetails"></div>
+        </article>
+
+        <article class="card spotlight-card">
+          <div class="card-header">
+            <span>Student Spotlight</span>
+            <h2>Featured Conservatory Artists</h2>
+          </div>
+          <div class="schedule-list" id="studentSpotlight"></div>
+        </article>
+
+        <article class="card announcement-card">
+          <div class="card-header">
+            <span>Campus Announcements</span>
+            <h2>Staff & Student Notices</h2>
+          </div>
+          <ul class="announcement-list">
+            <li>
+              <strong>Masterclass:</strong> Piano Mastery with Prof. Alvarez,
+              Wednesday 4 PM.
+            </li>
+            <li>
+              <strong>Auditions:</strong> Chamber orchestra spots open for next
+              term.
+            </li>
+            <li>
+              <strong>Library:</strong> New scores for orchestral excerpts now
+              available.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="contact-grid">
+        <article class="card contact-card">
+          <div class="card-header">
+            <span>Contact Us</span>
+            <h2>Reach Gr8keys Conservatory</h2>
+          </div>
+          <p class="contact-copy">
+            For ticket questions, ensemble auditions, or campus tours, contact
+            our box office team.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> contact@gr8keysconservatory.edu</li>
+            <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+            <li><strong>WhatsApp:</strong> +233 207918169</li>
+            <li><strong>Office:</strong> 12 Harmony Lane, Arts District</li>
+            <li><strong>Hours:</strong> Monday–Friday, 9 AM–6 PM</li>
+          </ul>
+          <a
+            class="whatsapp-btn"
+            href="https://wa.me/233207918169"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Message us on WhatsApp</a
+          >
+        </article>
+
+        <article class="card ticket-card">
+          <div class="card-header">
+            <span>Buy Tickets</span>
+            <h2>Reserve Your Seat</h2>
+          </div>
+          <p class="ticket-copy">
+            Secure tickets for upcoming recitals, ensemble showcases, and
+            special masterclasses.
+          </p>
+          <ul class="ticket-list">
+            <li><strong>Concert Hall:</strong> $32 / General, $18 / Student</li>
+            <li><strong>Chamber Hall:</strong> $24 / General, $14 / Student</li>
+            <li><strong>Masterclass Pass:</strong> $15 per session</li>
+          </ul>
+          <a class="ticket-btn" href="#">Purchase Tickets</a>
+        </article>
+      </section>
+
+      <section class="footnote">
+        <div>
+          <h3>Performance Tip</h3>
+          <p>
+            Warm-up and tune in the practice rooms 30 minutes before curtain.
+            Use the conservatory's second-floor lounge for quiet focus.
+          </p>
+        </div>
+        <div>
+          <h3>Stage Etiquette</h3>
+          <p>
+            Dress rehearsal access is limited to scheduled participants. Please
+            keep wings and backstage areas clear between sets.
+          </p>
+        </div>
+        <div class="social-footer">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.instagram.com/gr8keysconservatory"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7 2C4.238 2 2 4.238 2 7v10c0 2.762 2.238 5 5 5h10c2.762 0 5-2.238 5-5V7c0-2.762-2.238-5-5-5H7zm10 2c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3h10zm-5 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11zm0 2a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7zm4.75-.75a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                    />
+                  </svg>
+                </span>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/gr8keysconservatory"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.876v-6.988H7.898v-2.888h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.875h2.773l-.443 2.888h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    />
+                  </svg>
+                </span>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/gr8keysconservatory"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 15l5.196-3L10 9v6zm11.81-4.7c-.19-1.43-.76-2.56-1.72-3.52-.94-.95-2.07-1.52-3.5-1.71C14.4 5 12 5 12 5s-2.4 0-4.58.07c-1.43.19-2.56.76-3.5 1.71-.96.96-1.53 2.09-1.72 3.52C2 11.22 2 12 2 12s0 .78.2 1.7c.19 1.43.76 2.56 1.72 3.52.94.95 2.07 1.52 3.5 1.71C9.6 19 12 19 12 19s2.4 0 4.58-.07c1.43-.19 2.56-.76 3.5-1.71.96-.96 1.53-2.09 1.72-3.52.2-.92.2-1.7.2-1.7s0-.78-.2-1.7z"
+                    />
+                  </svg>
+                </span>
+                <span>YouTube</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/233207918169"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="social-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.149-.198.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.173.198-.298.297-.497.099-.198.05-.372-.025-.52-.075-.149-.672-1.612-.92-2.205-.242-.579-.487-.5-.672-.51l-.573-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.26.489 1.69.626.71.227 1.356.195 1.867.118.57-.085 1.758-.718 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"
+                    />
+                    <path
+                      d="M12 2C6.486 2 2 6.486 2 12c0 2.163.709 4.165 1.907 5.827L2 22l4.381-1.876A9.952 9.952 0 0 0 12 22c5.514 0 10-4.486 10-10S17.514 2 12 2z"
+                    />
+                  </svg>
+                </span>
+                <span>WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="designer-credit">
+        Designed by
+        <a
+          href="https://bigj11514-droid.github.io/Y_Cohde-officail-landing-page-/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Y_Cohde</a
+        >
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
