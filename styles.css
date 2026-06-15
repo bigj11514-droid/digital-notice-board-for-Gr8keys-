@@ -17,6 +17,7 @@
 
 html, body {
   margin: 0;
+  width: 100%;
   min-height: 100%;
   background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.06), transparent 32%),
     linear-gradient(180deg, #13171f 0%, #0b0d12 100%);
@@ -154,6 +155,7 @@ img{
 .card-header h2 {
   margin: 0;
   font-size: 1.45rem;
+  margin-bottom: 10px;
 }
 
 .highlight {
@@ -427,11 +429,29 @@ img{
 @media (max-width: 900px) {
   .hero, .grid, .footnote {
     grid-template-columns: 1fr;
-    border: 1px solid red;
-    width: 455px;
+    width: 135%;
+    padding: 0px 10px 0px 0px;
   }
   .announcement-card {
     grid-column: span 1;
+  }
+  .gallery-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-grid{
+    display: flex;
+    flex-direction: column;
+    width: 130%;
+    padding: 10px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
   }
 }
 
